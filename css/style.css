@@ -1079,7 +1079,7 @@
     position: relative;
     /*border: 2px solid red;*/
     width: 50%;
-    height: 450px;
+/*     height: 450px; */
 
     display: grid;
     grid-template-columns: auto auto;
