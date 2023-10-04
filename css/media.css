@@ -1,0 +1,508 @@
+@media screen and (max-width:480px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar button {
+        width: 100px;
+        right: 15vw;
+    }
+
+    .navbar #iconbar .listicon {
+        display: block;
+        right: 10px;
+    }
+
+    .navbar #iconbar .icnlist {
+        width: 100%;
+        top: 55px;
+    }
+
+    .navbar #iconbar .icnlist .dropdown .list1 {
+        top: 130px;
+        right: 30vw;
+    }
+
+
+    .box1 {
+        height: 150vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .box1 h1 {
+        font-size: 2rem;
+        top: 40px;
+    }
+
+    .box1 h2 {
+        font-size: 1.3rem;
+        top: 65px;
+    }
+
+    .box1 .box1in {
+        flex-direction: column;
+        top: 100px;
+        width: 80%;
+    }
+
+    .box1 .box1in .items {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .box2 {
+        height: fit-content;
+        padding-bottom: 0px;
+    }
+
+    .box2 .box2in {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .box2 .box2in .boxleft {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .box2 .box2in .boxright {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .box3 {
+        width: 90%;
+    }
+
+    .box3 li img {
+        width: 55px;
+    }
+
+    .box4 .box4in {
+        padding-top: 35px;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .box4 .box4in .leftbox {
+        width: 100%;
+    }
+
+    .box4 .box4in .rightbox {
+        width: 100%;
+    }
+
+    .box5 .box5in {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+
+    .box5 .box5in .items {
+        padding-bottom: 20px;
+    }
+
+    .box6 {
+        height: 350px;
+    }
+
+    .box6 .box6in p br {
+        display: none;
+    }
+
+    .box7 {
+        width: 90%;
+    }
+
+    .box7 h1 {
+        font-size: 2rem;
+    }
+
+    .box7 .box7grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    }
+
+    .box7 .box7grid .item5 {
+        top: 0px;
+    }
+
+    .box7 .box7grid .item6 {
+        top: 0px;
+    }
+
+    .box7 .box7grid .item7 {
+        top: 0px;
+        left: 0px;
+    }
+
+    .box7 .box7grid .item8 {
+        top: 0px;
+    }
+
+    .box7 .box7grid .item9 {
+        top: 0px;
+    }
+
+
+    .box8 {
+        margin-top: 50px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .box8 .leftbox {
+        width: 100%;
+    }
+
+    .box8 .rightbox {
+        padding-top: 20px;
+        width: 90%;
+        margin: auto;
+        column-gap: 20px;
+
+
+    }
+
+    .box10 {
+        height: 330vh;
+        width: 90%;
+    }
+
+    .box10 .box10in {
+        /* height: 655vh; */
+        width: 100%;
+
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 530px 530px 530px 530px;
+    }
+
+    .box10 .box10in .items {
+        margin-top: 30px;
+    }
+
+    .box11 {
+        width: 90%;
+    }
+
+    .box12 {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .box12 .leftbox {
+        width: 100%;
+        height: 310px;
+    }
+
+
+    .box12 .rightbox {
+        width: 100%;
+    }
+
+    .box12 .rightbox form .input1 {
+        width: 100%;
+    }
+
+    .box12 .rightbox form .input2 {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 17px;
+    }
+
+    .box12 .rightbox form .input3 {
+        width: 100%;
+    }
+
+    .box12 .rightbox form .input4 {
+        width: 100%;
+    }
+
+    footer .footerin {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 20px;
+    }
+
+    footer .footerin .item4 input{width:60vw;}
+
+    footer .footerin .item4 button{width:25vw;}
+}
+
+/*--------------------------------------------media768px---------------------*/
+/* @media (max-width:1130px){
+    .navbar ul {
+        display: none;
+    }
+
+} */
+
+
+@media (min-width:481px) and (max-width:1130px){
+
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar button {
+        width: 100px;
+        right: 15vw;
+    }
+
+    .navbar #iconbar .listicon {
+        display: block;
+        right: 10px;
+    }
+
+    .navbar #iconbar .icnlist {
+        width: 100%;
+        top: 55px;
+    }
+
+    .navbar #iconbar .icnlist .dropdown .list1 {
+        top: 130px;
+        right: 30vw;
+    }
+
+
+    .box1 {
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .box1 h1 {
+        font-size: 2rem;
+        top: 40px;
+    }
+
+    .box1 h2 {
+        font-size: 1.3rem;
+        top: 65px;
+    }
+
+    .box1 .box1in {
+        flex-direction: column;
+        top: 100px;
+        width: 80%;
+    }
+
+    .box1 .box1in .items {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .box2 {
+        height: fit-content;
+        padding-bottom: 0px;
+    }
+
+    .box2 .box2in {
+        width: 90%;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .box2 .box2in .boxleft {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .box2 .box2in .boxright {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .box3 {
+        width: 90%;
+    }
+
+    .box3 li img {
+        width: 55px;
+    }
+
+    .box4 .box4in {
+        padding-top: 35px;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .box4 .box4in .leftbox {
+        width: 100%;
+    }
+
+    .box4 .box4in .rightbox {
+        width: 100%;
+    }
+
+    .box5 .box5in {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+
+
+    .box5 .box5in .items {
+        padding-bottom: 20px;
+    }
+
+    .box6 {
+        height: 350px;
+    }
+
+    .box6 .box6in p br {
+        display: none;
+    }
+
+    .box7 {
+        width: 90%;
+    }
+
+    .box7 h1 {
+        font-size: 2rem;
+    }
+
+    .box7 .box7grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:repeat(9,80vh);
+        /* grid-template-rows: auto auto auto auto auto auto auto auto auto; */
+        margin-bottom: 20px;
+    }
+    .box7 .box7grid .items {
+        top: 0px;
+        height: 80vh;
+        
+    }
+
+    .box7 .box7grid .item5 {
+        top: 0px;
+
+    }
+
+    .box7 .box7grid .item6 {
+        top: 0px;
+    }
+
+    .box7 .box7grid .item7 {
+        top: 0px;
+        left: 0px;
+    }
+
+    .box7 .box7grid .item8 {
+        top: 0px;
+    }
+
+    .box7 .box7grid .item9 {
+        top: 0px;
+    }
+
+
+    .box8 {
+        margin-top: 50px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .box8 .leftbox {
+        width: 100%;
+    }
+
+    .box8 .rightbox {
+        padding-top: 20px;
+        width: 90%;
+        margin: auto;
+        column-gap: 20px;
+
+
+    }
+
+    .box10 {
+        height: 330vh;
+        width: 90%;
+    }
+
+    .box10 .box10in {
+        /* height: 655vh; */
+        width: 100%;
+
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,80vh);
+        /* grid-template-rows: 530px 530px 530px 530px; */
+    }
+
+    .box10 .box10in .items {
+        margin-top: 30px;
+    }
+
+    .box11 {
+        width: 90%;
+    }
+
+    .box12 {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .box12 .leftbox {
+        width: 100%;
+        height: 310px;
+    }
+
+
+    .box12 .rightbox {
+        width: 100%;
+    }
+
+    .box12 .rightbox form .input1 {
+        width: 100%;
+    }
+
+    .box12 .rightbox form .input2 {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 17px;
+    }
+
+    .box12 .rightbox form .input3 {
+        width: 100%;
+    }
+
+    .box12 .rightbox form .input4 {
+        width: 100%;
+    }
+
+    footer .footerin {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 20px;
+    }
+
+    footer .footerin .item4 input{width:60vw;}
+
+    footer .footerin .item4 button{width:25vw;}
+}
+

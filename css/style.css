@@ -1,0 +1,1753 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+
+    z-index: +5;
+
+
+}
+
+.navbar h1 {
+    position: absolute;
+    left: 9vw;
+    top: 15px;
+    font-size: 2.5rem;
+    color: orange;
+
+}
+
+.navbar h1 a {
+    color: white;
+    cursor: pointer;
+}
+
+.navbar ul {
+    /*padding-left: 20vw;*/
+    padding-top: 20px;
+    width: fit-content;
+    margin: auto;
+
+
+
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.5s;
+
+
+
+}
+
+.navbar ul li a:link {
+    color: white;
+}
+
+.navbar ul li a:visited {
+    color: white;
+}
+
+.navbar ul li a {
+    text-decoration:
+        none;
+    transition: 0.5s;
+
+}
+
+.navbar ul li a:hover {
+    color: orange;
+}
+
+.navbar ul .dropdown .list1 {
+    position: absolute;
+    right: 25vw;
+    top: 65px;
+    width: 250px;
+    height: 230px;
+    background-color: whitesmoke;
+    padding-left: 0px;
+
+    z-index: +5;
+    display: none;
+
+
+}
+
+.navbar ul .dropdown:hover .list1 {
+    display: block;
+    z-index: +5;
+}
+
+.navbar ul .dropdown .list1 li {
+    color: black;
+    padding: 10px;
+    padding-left: 25px;
+
+    display: block;
+}
+
+.navbar ul .dropdown .list1 .deepdropdown .list2 {
+    background-color: whitesmoke;
+    position: absolute;
+    right: 250px;
+    top: 50px;
+    width: 250px;
+    height: 330px;
+    padding-left: 0px;
+
+    display: none;
+    z-index: +5;
+
+}
+
+.navbar ul .dropdown .list1 .deepdropdown i {
+    font-size: 15px;
+}
+
+.navbar ul .dropdown .list1 .deepdropdown:hover .list2 {
+    display: block;
+    z-index: +5;
+}
+
+.navbar ul .dropdown .list1 .deepdropdown .list2 li {
+    padding-left: 0px;
+    padding: 20px;
+}
+
+.navbar ul .dropdown .list1 li:hover {
+    background-color: orange;
+}
+
+.navbar ul .dropdown .list1 .deepdropdown .list2 li:hover {
+    background-color: orange;
+}
+
+
+
+.navbar button {
+    font-size: 15px;
+    position: absolute;
+    right: 10vw;
+    top: 20px;
+    width: 100px;
+    height: 40px;
+    background: none;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.7s;
+
+
+}
+
+.navbar button:hover {
+    background-color: orange;
+    color: black;
+}
+
+
+.navbar #iconbar .listicon {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 22px;
+    right: 60px;
+
+    display: none;
+}
+
+
+
+.navbar #iconbar .icnlist li {
+    display: block;
+}
+
+.navbar #iconbar .icnlist{
+    background-color: rgb(156, 154, 154);
+    
+    position: relative;
+    left: 42vw;
+    top:-18px;
+    display: none;
+}
+
+.navbar #iconbar:hover .icnlist{display: block;}
+
+
+
+
+/*-------------------------------------------------box1------------------------*/
+
+.box1 {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box1 h1 a {
+    color: white;
+}
+
+.box1 h1 {
+    color: orange;
+    font-size: 4rem;
+    position: relative;
+    top: 100px;
+    text-align: center;
+
+    z-index: +1;
+
+    animation-name: downup;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box1 h2 {
+    color: rgb(209, 205, 205);
+    font-size: 1.7rem;
+    font-weight: 100;
+    position: relative;
+    top: 120px;
+    text-align: center;
+
+    animation-name: downup;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes downup {
+    0% {
+        transform: translate(0px, 300px);
+        z-index: -2;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        z-index: 2;
+    }
+}
+
+
+.box1in {
+    /*border: 1px solid rgb(233, 12, 12);*/
+    display: flex;
+
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+
+
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.2);
+        z-index: -1;
+
+    }
+
+
+    100% {
+        transform: scale(1);
+        z-index: 2;
+
+    }
+}
+
+
+
+
+.box1in .items {
+    position: relative;
+    text-align: center;
+    ;
+    border: 1px solid rgb(151, 143, 143);
+    width: 20vw;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.5s;
+
+
+    animation-name: downup2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes downup2 {
+    0% {
+        transform: translate(0px, 120px);
+        z-index: -2;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        z-index: 2;
+    }
+}
+
+.box1in .items i {
+    font-size: 2rem;
+    color: orange;
+    padding: 10px;
+}
+
+.box1in .items h3 {
+    padding-top: 20px;
+}
+
+.box1in .items h3 a {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.box1in .items h3:hover a {
+    color: orange;
+}
+
+.box1in .items:hover {
+    border-color: orange;
+}
+
+/*-------------------------------------------------box2------------------------*/
+
+.box2 {
+    width: 100%;
+
+    padding-bottom: 50px;
+
+}
+
+.box2in {
+    margin: auto;
+    width: 85%;
+    /*border: 2px solid red;*/
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
+.box2in .boxleft {
+    position: relative;
+    /* border: 2px solid black;*/
+    width: 46%;
+    height: 450px;
+    padding: 20px;
+    /*overflow: hidden;*/
+    /*margin-top: 50px;*/
+
+    animation-name: left-right;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+
+@keyframes left-right {
+    0% {
+        transform: translate(-150px, 150px);
+        z-index: -2;
+
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        z-index: 2;
+
+    }
+}
+
+.box2in .boxleft h1 {
+    color: rgb(58, 57, 57);
+    font-size: 2rem
+}
+
+.box2in .boxleft p {
+    color: rgb(54, 53, 53);
+    font-size: 1.2rem;
+    padding-top: 20px;
+
+
+}
+
+.box2in .boxleft p i {
+    color: orange;
+}
+
+.box2in .boxleft .btm-p {
+    padding-top: 30px;
+}
+
+.box2in .boxright {
+    position: relative;
+    /* border: 2px solid black;*/
+    width: 46%;
+    height: 450px;
+    padding: 20px;
+    /*margin-top: 50px;*/
+    background-image: url(../img/about.jpg);
+    background-position: center;
+
+    animation-name: right-left;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes right-left {
+    0% {
+        transform: translate(150px, 150px);
+        z-index: -2;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        z-index: 2;
+    }
+}
+
+/*-------------------------------------------------box3------------------------*/
+.box3 {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    /*background-color: antiquewhite;*/
+
+    animation-name: zoom2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes zoom2 {
+    0% {
+        transform: scale(0.7);
+        z-index: -2;
+    }
+
+    100% {
+        transform: scale(1);
+        z-index: 2;
+    }
+}
+
+.box3 ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+
+
+.box3 ul img {
+    filter: grayscale(100%);
+    width: 100px;
+    /*padding: 40px;*/
+}
+
+.box3 ul img:hover {
+    filter: none;
+}
+
+/*-------------------------------------------------box4------------------------*/
+
+.box4 {
+    width: 100%;
+}
+
+.box4in {
+    width: 85%;
+
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.box4in .leftbox {
+    position: relative;
+
+    /*border:2px solid black;*/
+    width: 48%;
+    height: 500px;
+
+    background-image: url(../img/features.jpg);
+    background-position: center;
+    background-size: cover;
+
+    animation-name: left-right;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+.box4in .rightbox {
+    position: relative;
+    /*border:2px solid black;*/
+    width: 48%;
+    height: 500px;
+
+    animation-name: right-left2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+
+}
+
+@keyframes right-left2 {
+    0% {
+        transform: translate(150px, 70px);
+        z-index: -2;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        z-index: 2;
+    }
+}
+
+
+.box4in .rightbox i {
+    color: orange;
+    font-size: 2.5rem;
+
+    /*animation-name: zoom2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;*/
+}
+
+.box4in .rightbox h1 {
+    display: inline-block;
+    color: rgb(73, 72, 72);
+    font-size: 1.8rem;
+
+    padding-top: 30px;
+    padding-left: 20px;
+
+
+    /*animation-name: zoom2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;*/
+}
+
+.box4in .rightbox p {
+    color: gray;
+    font-size: 1.2rem;
+    padding-left: 75px;
+    padding-top: 10px;
+
+    /* animation-name: zoom2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;*/
+}
+
+
+/*-------------------------------------------------------------box5--------------------*/
+.box5 {
+    width: 85%;
+
+    margin: auto;
+
+}
+
+.box5 h3 {
+    position: relative;
+
+    display: inline-block;
+    color: rgb(107, 106, 106);
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+.box5 hr {
+    position: relative;
+
+    width: 150px;
+    height: 1px;
+    display: inline-block;
+    background-color: orange;
+    margin: 2px;
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box5 h1 {
+    position: relative;
+
+    padding-top: 10px;
+    font-size: 2.2rem;
+    color: black;
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+
+.box5in {
+    position: relative;
+
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px 300px;
+    column-gap: 25px;
+    row-gap: 25px;
+
+    animation-name: downup2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes downup3 {
+    0% {
+        transform: translate(0px, 100px);
+        z-index: -2;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        z-index: 2;
+    }
+}
+
+.box5in .items {
+    position: relative;
+    border: 1px solid rgb(94, 92, 92);
+    text-align: center;
+    transition: 0.5s;
+
+    animation-name: zoom3;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes zoom3 {
+    0% {
+        transform: scale(0.7);
+        z-index: -2;
+    }
+
+    100% {
+        transform: scale(1);
+        z-index: 2;
+    }
+}
+
+.box5in .items:hover {
+    box-shadow: -1px -1px 20px gray;
+    background-color: white;
+    transform: translate(0px, -15px)
+}
+
+.box5in i {
+    font-size: 2rem;
+    padding-top: 50px;
+    color: orange;
+}
+
+.box5in h2 {
+    padding-top: 20px;
+    color: rgb(49, 48, 48);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.box5in h2:hover {
+    color: orange;
+}
+
+.box5in p {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    color: rgb(49, 48, 48);
+}
+
+/*-------------------------------------------------------------box6--------------------------*/
+.box6 {
+    width: 100%;
+
+    margin-top: 80px;
+    height: 300px;
+    background-image: url(../img/cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+.box6in {
+    position: relative;
+
+    width: 85%;
+    height: 100%;
+    margin: auto;
+
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box6in h1 {
+    color: white;
+    padding-top: 50px;
+
+
+}
+
+.box6in p {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 20px;
+
+
+}
+
+.box6in button {
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+
+    transition: 0.5s;
+
+
+}
+
+.box6in button:hover {
+    background-color: orange;
+    border-color: orange;
+    color: black;
+}
+
+
+/*-------------------------------------------------------------box7--------------------------*/
+
+
+.box7 {
+    width: 85%;
+    padding-top: 80px;
+    margin: auto;
+
+
+}
+
+.box7 h3 {
+    position: relative;
+
+    display: inline-block;
+
+    color: rgb(107, 106, 106);
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+.box7 hr {
+    position: relative;
+
+    width: 150px;
+    height: 1px;
+    display: inline-block;
+    background-color: orange;
+    margin: 2px;
+
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box7 h1 {
+    position: relative;
+    padding-top: 10px;
+    font-size: 2.2rem;
+
+    color: black;
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box7 .btnbox {
+    position: relative;
+    /* border: 2px solid red;*/
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 250px;
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box7 .btnbox button {
+    font-size: 15px;
+    padding: 10px;
+    width: 58px;
+
+    border-radius: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.box7 .btnbox .btn1 {
+    background-color: orange;
+}
+
+.box7 .btnbox button:hover {
+    background-color: orange;
+}
+
+.box7grid {
+    position: relative;
+    width: 100%;
+    /*border: 2px solid red;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    animation-name: downup2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+
+
+.box7grid .item1 {
+    position: relative;
+
+    height: 400px;
+    background-image: url(../img/portfolio/portfolio-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item2 {
+    position: relative;
+
+    height: 250px;
+    background-image: url(../img/portfolio/portfolio-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item3 {
+    position: relative;
+
+    height: 200px;
+    background-image: url(../img/portfolio/portfolio-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item4 {
+    position: relative;
+
+    height: 450px;
+    background-image: url(../img/portfolio/portfolio-6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item5 {
+    height: 500px;
+    position: relative;
+    top: -148px;
+    background-image: url(../img/portfolio/portfolio-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item6 {
+    height: 200px;
+    position: relative;
+    top: -198px;
+    background-image: url(../img/portfolio/portfolio-4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item7 {
+    height: 200px;
+    position: relative;
+    top: -270px;
+    left: 708px;
+    background-image: url(../img/portfolio/portfolio-8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item8 {
+    height: 250px;
+    position: relative;
+    top: -143px;
+    background-image: url(../img/portfolio/portfolio-9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box7grid .item9 {
+    height: 200px;
+    position: relative;
+    top: -495px;
+    background-image: url(../img/portfolio/portfolio-7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.box7grid .items .hvrbox {
+    width: 100%;
+    height: 100%;
+    color: white;
+
+    transition: 0.5s;
+}
+
+.box7grid .items:hover .hvrbox {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.box7grid .items .hvrbox h4 {
+    display: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+
+    transition: 1s;
+}
+
+
+.box7grid .items .hvrbox p {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    transition: 1s;
+}
+
+
+.box7grid .items .hvrbox h3 {
+    color: white;
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+
+    transition: 1s;
+    cursor: pointer;
+    animation: none;
+}
+
+
+.box7grid .items .hvrbox h3 i:hover {
+    color: orange;
+}
+
+
+.box7grid .items:hover h4 {
+    display: block;
+}
+
+.box7grid .items:hover p {
+    display: block;
+}
+
+.box7grid .items:hover h3 {
+    display: block;
+}
+
+/*------------------------------------------------box8-------------------*/
+
+.box8 {
+    width: 85%;
+    /* border: 2px solid red;*/
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.box8 .leftbox {
+    /*border: 2px solid red;*/
+    position: relative;
+    width: 46%;
+    height: 450px;
+
+    background-image: url(../img/counts-img.jpg);
+    background-position: center;
+    background-size: cover;
+
+    animation-name: left-right;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+.box8 .rightbox {
+    position: relative;
+    /*border: 2px solid red;*/
+    width: 50%;
+    height: 450px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+
+    animation-name: right-left2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+
+}
+
+
+
+.box8 .rightbox .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box8 .rightbox .items {
+    color: rgb(41, 40, 40);
+}
+
+.box8 .rightbox .item1 h1 {
+    color: rgb(41, 40, 40);
+    font-size: 2rem;
+    padding-top: 10px;
+
+
+}
+
+.box8 .rightbox .item1 p {
+    color: rgb(41, 40, 40);
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.box8 .rightbox .item2 p {
+    padding-left: 50px;
+}
+
+.box8 .rightbox .item3 p {
+    padding-left: 50px;
+}
+
+.box8 .rightbox .item4 p {
+    padding-left: 50px;
+}
+
+.box8 .rightbox .item5 p {
+    padding-left: 50px;
+}
+
+.box8 .rightbox .items i {
+    font-size: 2rem;
+    color: orange;
+}
+
+.box8 .rightbox .item2 h1 {
+    display: inline-block;
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+.box8 .rightbox .item3 h1 {
+    display: inline-block;
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+.box8 .rightbox .item4 h1 {
+    display: inline-block;
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+.box8 .rightbox .item5 h1 {
+    display: inline-block;
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+/*------------------------------------------------box9-------------------*/
+
+.box9 {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/testimonials-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: white;
+}
+
+.box9in {
+    position: relative;
+    /*border: 2px solid red;*/
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+
+    animation-name: downup2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box9in .img {
+
+    position: relative;
+    margin-top: 50px;
+    width: 100px;
+    border-radius: 50%;
+    border: 7px solid rgba(90, 87, 87, 0.7);
+
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box9in h1 {
+    position: relative;
+    color: aliceblue;
+
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box9in p {
+    position: relative;
+    font-size: 1.2rem;
+    color: rgb(223, 219, 219);
+
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box9in h2 {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: aliceblue;
+    display: inline-block;
+    padding-top: 20px;
+
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box9in h2 i {
+    font-size: 2rem;
+}
+
+/*------------------------------------------------box10-------------------*/
+
+.box10 {
+    width: 85%;
+    margin: auto;
+
+}
+
+.box10 h3 {
+    position: relative;
+
+    display: inline-block;
+
+    color: rgb(107, 106, 106);
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+.box10 hr {
+    position: relative;
+
+    width: 150px;
+    height: 1px;
+    display: inline-block;
+    background-color: orange;
+    margin: 2px;
+
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box10 h1 {
+    position: relative;
+    padding-top: 10px;
+    font-size: 2.2rem;
+
+    color: black;
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+
+
+
+.box10in {
+    /*border: 2px solid black;*/
+
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    height: 300px;
+
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 252px);
+    column-gap: 20px;
+
+    justify-content: space-between;
+}
+
+.box10in .items {
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 5px gray;
+}
+
+.box10in .item1 {
+    background-image: url(../img/team/team-1.jpg);
+    background-size: cover;
+
+
+    animation-name: downup;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box10in .item2 {
+    background-image: url(../img/team/team-2.jpg);
+    background-size: cover;
+
+    animation-name: downup;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box10in .item3 {
+    background-image: url(../img/team/team-3.jpg);
+    background-size: cover;
+
+    animation-name: downup;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box10in .item4 {
+    background-image: url(../img/team/team-4.jpg);
+    background-size: cover;
+
+    animation-name: downup;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+.box10in .items .hvrbox2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
+.box10in .items:hover .hvrbox2 {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.box10in .hvrbox2 h4 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+
+    position: relative;
+    top: 200px;
+    display: none;
+
+
+
+
+}
+
+
+
+.box10in .hvrbox2 p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+
+    position: relative;
+    left: 0px;
+    top: 200px;
+
+    display: none;
+    animation: none;
+}
+
+.box10in .hvrbox2 h3 {
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+    top: 210px;
+    text-align: center;
+
+    display: none;
+
+
+}
+
+.box10in .hvrbox2 h3 i {
+    padding: 10px;
+}
+
+.box10in .hvrbox2 h3 i:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.box10in .items:hover h4 {
+    display: block;
+
+    animation-name: downup;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+
+}
+
+.box10in .items:hover p {
+    display: block;
+
+    animation-name: downup;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box10in .items:hover h3 {
+    display: block;
+
+    animation-name: downup2;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+
+}
+
+/*------------------------------------------------box11-------------------*/
+
+.box11 {
+    width: 85%;
+    margin: auto;
+
+    margin-top: 80px;
+
+
+}
+
+.box11 h3 {
+    position: relative;
+
+    display: inline-block;
+
+    color: rgb(107, 106, 106);
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+.box11 hr {
+    position: relative;
+
+    width: 150px;
+    height: 1px;
+    display: inline-block;
+    background-color: orange;
+    margin: 2px;
+
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box11 h1 {
+    position: relative;
+    padding-top: 10px;
+    font-size: 2.2rem;
+
+    color: black;
+
+
+    animation-name: downup3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+.box11in {
+    position: relative;
+    margin-top: 50px;
+
+
+    animation-name: downup2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+/*------------------------------------------------box12-------------------*/
+.box12 {
+
+    position: relative;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+
+    display: flex;
+
+    animation-name: downup2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+.box12 .leftbox {
+    width: 40%;
+    height: 400px;
+
+
+}
+
+.box12 .leftbox i {
+    font-size: 2.5rem;
+    color: orange;
+
+}
+
+.box12 .leftbox h2 {
+    font-size: 2rem;
+    padding-left: 10px;
+    display: inline-block;
+    color: rgb(54, 54, 53);
+}
+
+.box12 .leftbox p {
+    font-size: 1rem;
+    color: rgb(128, 126, 123);
+    padding-left: 40px;
+
+}
+
+.box12 .leftbox .emailp {
+    padding-left: 55px;
+}
+
+
+.box12 .rightbox {
+    width: 60%;
+    height: 400px;
+
+
+    text-align: center;
+
+}
+
+.box12 .rightbox input {
+    height: 40px;
+    font-size: 1rem;
+}
+
+
+.box12 .rightbox .input1 {
+    width: 46%;
+    padding-left: 10px;
+}
+
+.box12 .rightbox .input2 {
+    margin-left: 10px;
+    width: 47%;
+    padding-left: 10px;
+}
+
+.box12 .rightbox .input3 {
+    width: 97%;
+
+    padding-left: 10px;
+}
+
+.box12 .rightbox .input4 {
+    width: 97%;
+    height: 120px;
+    font-size: 1.1rem;
+
+    padding-left: 10px;
+}
+
+.box12 .rightbox button {
+    position: relative;
+    top: 20px;
+    width: 150px;
+    height: 40px;
+
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.box12 .rightbox button:hover {
+    background-color: rgb(252, 189, 72);
+}
+
+/*------------------------------------------------footer-------------------*/
+
+footer {
+    background-color: rgb(39, 38, 38);
+    position: relative;
+}
+
+footer .footerin {
+
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto 26vw;
+    grid-template-rows: auto;
+
+
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+footer .footerin .items {
+
+    color: white;
+}
+
+footer .footerin .item1 p i {
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+footer .footerin .items a i {
+    color: orange;
+    font-size: 0.7rem;
+}
+
+footer .footerin .item1 p i:hover {
+    color: orange;
+}
+
+footer .footerin .items a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+footer .footerin .items a:hover {
+    color: orange;
+}
+
+footer .footerin .item1 h1 {
+    color: orange;
+}
+
+
+
+
+footer .footerin .item4 input {
+    width: 15.2vw;
+    height: 40px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+
+    margin-top: 20px;
+}
+
+footer .footerin .item4 button {
+    font-size: 1rem;
+    width: 10vw;
+    height: 41px;
+    background-color: orange;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    transition: 0.5s;
+}
+
+footer .footerin .item4 button:hover {
+    background-color: rgb(245, 176, 48);
+}
+
+/*------------------------------------------------topup-button-------------------*/
+.topup {
+
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10%;
+
+    transition: 0.5s;
+}
+
+.topup:hover {
+    background-color: black;
+}
+
+.topupicn {
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+}
+
+/*-----------------------------------------media-------------------*/
+
