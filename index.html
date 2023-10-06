@@ -55,36 +55,36 @@
 
             <button>Get Started</button>
 
-           <div id="iconbar"><i class="fa-solid fa-list listicon"> </i>
+          <div id="iconbar"><i class="fa-solid fa-list listicon" onclick="listshow()"> </i>
 
-            <ul class="icnlist">
-                <li><a href="#main">Home</a></li>
-                <li><a href="#box2">About</a></li>
-                <li><a href="#box5">Services</a></li>
-                <li><a href="#box7">Portfolio</a></li>
-                <li><a href="#box10">Team</a></li>
-                <li class="dropdown"><a>Dropdown <i class="fa-solid fa-caret-down"></i></a>
-                    <ul class="list1">
-                        <li>Drop1</li>
-                        <li class="deepdropdown">Deep Drop Down &emsp; &emsp; &gt;</i>
-                            <ul class="list2">
-                                <li>Deep Drop Down 1</li>
-                                <li>Deep Drop Down 2</li>
-                                <li>Deep Drop Down 3</li>
-                                <li>Deep Drop Down 4</li>
-                                <li>Deep Drop Down 5</li>
-                            </ul>
-                        </li>
-                        <li>Drop2</li>
-                        <li>Drop3</li>
-                        <li>Drop4</li>
-                    </ul>
-                </li>
-                <li><a href="#box11">Contact</a></li>
-                    
-                    
-            </ul>
-        </div> 
+                <ul class="icnlist" id="icnlist"><i class="fa-solid fa-xmark  closeicn"  onclick="listhide()"></i> 
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#box2">About</a></li>
+                    <li><a href="#box5">Services</a></li>
+                    <li><a href="#box7">Portfolio</a></li>
+                    <li><a href="#box10">Team</a></li>
+                    <li class="dropdown"><a>Dropdown <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="list1">
+                            <li>Drop1</li>
+                            <li class="deepdropdown">Deep Drop Down &emsp; &emsp; &gt;</i>
+                                <ul class="list2">
+                                    <li>Deep Drop Down 1</li>
+                                    <li>Deep Drop Down 2</li>
+                                    <li>Deep Drop Down 3</li>
+                                    <li>Deep Drop Down 4</li>
+                                    <li>Deep Drop Down 5</li>
+                                </ul>
+                            </li>
+                            <li>Drop2</li>
+                            <li>Drop3</li>
+                            <li>Drop4</li>
+                        </ul>
+                    </li>
+                    <li><a href="#box11">Contact</a></li>
+
+
+                </ul>
+            </div>
        
             
         </nav>
@@ -514,6 +514,18 @@
         <!------------------------------------------------topup-button---------->
         <div class="topup"><a href="#main"><i class="fa-solid fa-arrow-up topupicn"></i></a></div>
     </div>
+
+    <script>
+        var list = document.getElementById("icnlist");
+
+        function listshow() {
+            list.setAttribute("style","display:block;");
+        }
+
+        function listhide() {
+            list.removeAttribute("style");
+        }
+    </script>
 </body>
 
 </html>
