@@ -12,15 +12,36 @@
         right: 15vw;
     }
 
+    /*-----------------------------*/
+    .navbar #iconbar{display: block;}
+
     .navbar #iconbar .listicon {
         display: block;
         right: 10px;
     }
 
     .navbar #iconbar .icnlist {
-        width: 100%;
+        display: none;
+        width: 50%;
         top: 55px;
+        right: 0px;
     }
+
+    .navbar #iconbar .icnlist .closeicn {
+        position: absolute;
+        right: 5px;
+        top:5px;
+        font-size: 1.2rem;
+        border: 1px solid black;
+        color:black;
+        cursor: pointer;
+    }
+
+    /* .navbar #iconbar:hover .icnlist {
+        display: block;
+    } */
+
+    /*-----------------------------*/
 
     .navbar #iconbar .icnlist .dropdown .list1 {
         top: 130px;
@@ -267,15 +288,38 @@
         right: 15vw;
     }
 
+    /*-----------------------------*/
+
+    .navbar #iconbar{display: block;}
+
     .navbar #iconbar .listicon {
         display: block;
         right: 10px;
     }
 
+
     .navbar #iconbar .icnlist {
-        width: 100%;
+        display: none;
+        width: 50%;
         top: 55px;
+        right: 0px;
     }
+
+    .navbar #iconbar .icnlist .closeicn {
+        position: absolute;
+        right: 5px;
+        top:5px;
+        font-size: 1.2rem;
+        border: 1px solid black;
+        color:black;
+        cursor: pointer;
+    }
+
+    /* .navbar #iconbar:hover .icnlist {
+        display: block;
+    } */
+
+    /*-----------------------------*/
 
     .navbar #iconbar .icnlist .dropdown .list1 {
         top: 130px;
